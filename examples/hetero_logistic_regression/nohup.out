@@ -1,0 +1,1317 @@
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/guest_runtime_conf.json_hetero_logistic_regression_example_standalone_20210318143628
+jobid is hetero_logistic_regression_example_standalone_20210318143628
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/host_runtime_conf.json_hetero_logistic_regression_example_standalone_20210318143628
+jobid is hetero_logistic_regression_example_standalone_20210318143628
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/arbiter_runtime_conf.json_hetero_logistic_regression_example_standalone_20210318143628
+jobid is hetero_logistic_regression_example_standalone_20210318143628
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_guest_workflow.py", line 36, in <module>
+    guest_wf.run()
+  File "/Users/clz/PycharmProjects/FATE-0.1/workflow/workflow.py", line 363, in run
+    self._init_argument()
+  File "/Users/clz/PycharmProjects/FATE-0.1/workflow/workflow.py", line 354, in _init_argument
+    self._initialize(config_path)
+  File "/Users/clz/PycharmProjects/FATE-0.1/workflow/workflow.py", line 52, in _initialize
+    self._initialize_model(config_path)
+  File "../../workflow/hetero_lr_workflow/hetero_guest_workflow.py", line 27, in _initialize_model
+    self.logistic_param = ParamExtract.parse_param_from_config(logistic_param, config)
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/util/param_extract.py", line 41, in parse_param_from_config
+    config_json = json.loads(fin.read())
+  File "/Users/clz/anaconda3/envs/FATE/lib/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/Users/clz/anaconda3/envs/FATE/lib/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Users/clz/anaconda3/envs/FATE/lib/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 5 column 21 (char 63)
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_arbiter_workflow.py", line 40, in <module>
+    arbiter_wf.run()
+  File "/Users/clz/PycharmProjects/FATE-0.1/workflow/workflow.py", line 363, in run
+    self._init_argument()
+  File "/Users/clz/PycharmProjects/FATE-0.1/workflow/workflow.py", line 354, in _init_argument
+    self._initialize(config_path)
+  File "/Users/clz/PycharmProjects/FATE-0.1/workflow/workflow.py", line 52, in _initialize
+    self._initialize_model(config_path)
+  File "../../workflow/hetero_lr_workflow/hetero_arbiter_workflow.py", line 27, in _initialize_model
+    self.logistic_param = ParamExtract.parse_param_from_config(logistic_param, config)
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/util/param_extract.py", line 41, in parse_param_from_config
+    config_json = json.loads(fin.read())
+  File "/Users/clz/anaconda3/envs/FATE/lib/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/Users/clz/anaconda3/envs/FATE/lib/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Users/clz/anaconda3/envs/FATE/lib/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 5 column 21 (char 65)
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_host_workflow.py", line 36, in <module>
+    host_wf.run()
+  File "/Users/clz/PycharmProjects/FATE-0.1/workflow/workflow.py", line 363, in run
+    self._init_argument()
+  File "/Users/clz/PycharmProjects/FATE-0.1/workflow/workflow.py", line 354, in _init_argument
+    self._initialize(config_path)
+  File "/Users/clz/PycharmProjects/FATE-0.1/workflow/workflow.py", line 52, in _initialize
+    self._initialize_model(config_path)
+  File "../../workflow/hetero_lr_workflow/hetero_host_workflow.py", line 27, in _initialize_model
+    self.logistic_param = ParamExtract.parse_param_from_config(logistic_param, config)
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/util/param_extract.py", line 41, in parse_param_from_config
+    config_json = json.loads(fin.read())
+  File "/Users/clz/anaconda3/envs/FATE/lib/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/Users/clz/anaconda3/envs/FATE/lib/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Users/clz/anaconda3/envs/FATE/lib/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 5 column 21 (char 62)
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/guest_runtime_conf.json_hetero_logistic_regression_example_standalone_20210318145436
+jobid is hetero_logistic_regression_example_standalone_20210318145436
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/host_runtime_conf.json_hetero_logistic_regression_example_standalone_20210318145436
+jobid is hetero_logistic_regression_example_standalone_20210318145436
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/arbiter_runtime_conf.json_hetero_logistic_regression_example_standalone_20210318145436
+jobid is hetero_logistic_regression_example_standalone_20210318145436
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_guest_workflow.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression import HeteroLRGuest
+ModuleNotFoundError: No module named 'federatedml'
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_host_workflow.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression import HeteroLRHost
+ModuleNotFoundError: No module named 'federatedml'
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_arbiter_workflow.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression import HeteroLRArbiter
+ModuleNotFoundError: No module named 'federatedml'
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/guest_runtime_conf.json_hetero_logistic_regression_example_standalone_20210318145807
+jobid is hetero_logistic_regression_example_standalone_20210318145807
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/host_runtime_conf.json_hetero_logistic_regression_example_standalone_20210318145807
+jobid is hetero_logistic_regression_example_standalone_20210318145807
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_guest_workflow.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression import HeteroLRGuest
+ModuleNotFoundError: No module named 'federatedml'
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/arbiter_runtime_conf.json_hetero_logistic_regression_example_standalone_20210318145807
+jobid is hetero_logistic_regression_example_standalone_20210318145807
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_host_workflow.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression import HeteroLRHost
+ModuleNotFoundError: No module named 'federatedml'
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_arbiter_workflow.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression import HeteroLRArbiter
+ModuleNotFoundError: No module named 'federatedml'
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/guest_runtime_conf.json_hetero_logistic_regression_example_standalone_20210318145855
+jobid is hetero_logistic_regression_example_standalone_20210318145855
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/host_runtime_conf.json_hetero_logistic_regression_example_standalone_20210318145855
+jobid is hetero_logistic_regression_example_standalone_20210318145855
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/arbiter_runtime_conf.json_hetero_logistic_regression_example_standalone_20210318145855
+jobid is hetero_logistic_regression_example_standalone_20210318145855
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_guest_workflow.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression import HeteroLRGuest
+ModuleNotFoundError: No module named 'federatedml'
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_host_workflow.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression import HeteroLRHost
+ModuleNotFoundError: No module named 'federatedml'
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_arbiter_workflow.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression import HeteroLRArbiter
+ModuleNotFoundError: No module named 'federatedml'
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/guest_runtime_conf.json_hetero_logistic_regression_example_standalone_20210318145958
+jobid is hetero_logistic_regression_example_standalone_20210318145958
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/host_runtime_conf.json_hetero_logistic_regression_example_standalone_20210318145958
+jobid is hetero_logistic_regression_example_standalone_20210318145958
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/arbiter_runtime_conf.json_hetero_logistic_regression_example_standalone_20210318145958
+jobid is hetero_logistic_regression_example_standalone_20210318145958
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_guest_workflow.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression import HeteroLRGuest
+ModuleNotFoundError: No module named 'federatedml'
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_host_workflow.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression import HeteroLRHost
+ModuleNotFoundError: No module named 'federatedml'
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_arbiter_workflow.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression import HeteroLRArbiter
+ModuleNotFoundError: No module named 'federatedml'
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/guest_runtime_conf.json_hetero_logistic_regression_example_standalone_20210318150012
+jobid is hetero_logistic_regression_example_standalone_20210318150012
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/host_runtime_conf.json_hetero_logistic_regression_example_standalone_20210318150012
+jobid is hetero_logistic_regression_example_standalone_20210318150012
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/arbiter_runtime_conf.json_hetero_logistic_regression_example_standalone_20210318150012
+jobid is hetero_logistic_regression_example_standalone_20210318150012
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_guest_workflow.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression import HeteroLRGuest
+ModuleNotFoundError: No module named 'federatedml'
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_host_workflow.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression import HeteroLRHost
+ModuleNotFoundError: No module named 'federatedml'
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_arbiter_workflow.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression import HeteroLRArbiter
+ModuleNotFoundError: No module named 'federatedml'
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/guest_runtime_conf.json_hetero_logistic_regression_example_standalone_20210318150036
+jobid is hetero_logistic_regression_example_standalone_20210318150036
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/host_runtime_conf.json_hetero_logistic_regression_example_standalone_20210318150036
+jobid is hetero_logistic_regression_example_standalone_20210318150036
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/arbiter_runtime_conf.json_hetero_logistic_regression_example_standalone_20210318150036
+jobid is hetero_logistic_regression_example_standalone_20210318150036
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_arbiter_workflow.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression import HeteroLRArbiter
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/__init__.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression.hetero_lr_arbiter import HeteroLRArbiter
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/hetero_lr_arbiter.py", line 18, in <module>
+    from arch.api import federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/federation.py", line 19, in <module>
+    from arch.api.standalone import federation as standalone_federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/federation.py", line 17, in <module>
+    from arch.api.standalone.eggroll import _DTable
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/eggroll.py", line 25, in <module>
+    import lmdb
+ModuleNotFoundError: No module named 'lmdb'
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_guest_workflow.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression import HeteroLRGuest
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/__init__.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression.hetero_lr_arbiter import HeteroLRArbiter
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/hetero_lr_arbiter.py", line 18, in <module>
+    from arch.api import federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/federation.py", line 19, in <module>
+    from arch.api.standalone import federation as standalone_federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/federation.py", line 17, in <module>
+    from arch.api.standalone.eggroll import _DTable
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/eggroll.py", line 25, in <module>
+    import lmdb
+ModuleNotFoundError: No module named 'lmdb'
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_host_workflow.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression import HeteroLRHost
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/__init__.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression.hetero_lr_arbiter import HeteroLRArbiter
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/hetero_lr_arbiter.py", line 18, in <module>
+    from arch.api import federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/federation.py", line 19, in <module>
+    from arch.api.standalone import federation as standalone_federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/federation.py", line 17, in <module>
+    from arch.api.standalone.eggroll import _DTable
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/eggroll.py", line 25, in <module>
+    import lmdb
+ModuleNotFoundError: No module named 'lmdb'
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/guest_runtime_conf.json_hetero_logistic_regression_example_standalone_20210318150209
+jobid is hetero_logistic_regression_example_standalone_20210318150209
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/host_runtime_conf.json_hetero_logistic_regression_example_standalone_20210318150209
+jobid is hetero_logistic_regression_example_standalone_20210318150209
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/arbiter_runtime_conf.json_hetero_logistic_regression_example_standalone_20210318150209
+jobid is hetero_logistic_regression_example_standalone_20210318150209
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_arbiter_workflow.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression import HeteroLRArbiter
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/__init__.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression.hetero_lr_arbiter import HeteroLRArbiter
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/hetero_lr_arbiter.py", line 18, in <module>
+    from arch.api import federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/federation.py", line 19, in <module>
+    from arch.api.standalone import federation as standalone_federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/federation.py", line 17, in <module>
+    from arch.api.standalone.eggroll import _DTable
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/eggroll.py", line 25, in <module>
+    import lmdb
+ModuleNotFoundError: No module named 'lmdb'
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_host_workflow.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression import HeteroLRHost
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/__init__.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression.hetero_lr_arbiter import HeteroLRArbiter
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/hetero_lr_arbiter.py", line 18, in <module>
+    from arch.api import federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/federation.py", line 19, in <module>
+    from arch.api.standalone import federation as standalone_federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/federation.py", line 17, in <module>
+    from arch.api.standalone.eggroll import _DTable
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/eggroll.py", line 25, in <module>
+    import lmdb
+ModuleNotFoundError: No module named 'lmdb'
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_guest_workflow.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression import HeteroLRGuest
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/__init__.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression.hetero_lr_arbiter import HeteroLRArbiter
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/hetero_lr_arbiter.py", line 18, in <module>
+    from arch.api import federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/federation.py", line 19, in <module>
+    from arch.api.standalone import federation as standalone_federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/federation.py", line 17, in <module>
+    from arch.api.standalone.eggroll import _DTable
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/eggroll.py", line 25, in <module>
+    import lmdb
+ModuleNotFoundError: No module named 'lmdb'
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/guest_runtime_conf.json_hetero_logistic_regression_example_standalone_20210318150254
+jobid is hetero_logistic_regression_example_standalone_20210318150254
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/host_runtime_conf.json_hetero_logistic_regression_example_standalone_20210318150254
+jobid is hetero_logistic_regression_example_standalone_20210318150254
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/arbiter_runtime_conf.json_hetero_logistic_regression_example_standalone_20210318150254
+jobid is hetero_logistic_regression_example_standalone_20210318150254
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_host_workflow.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression import HeteroLRHost
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/__init__.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression.hetero_lr_arbiter import HeteroLRArbiter
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/hetero_lr_arbiter.py", line 18, in <module>
+    from arch.api import federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/federation.py", line 19, in <module>
+    from arch.api.standalone import federation as standalone_federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/federation.py", line 17, in <module>
+    from arch.api.standalone.eggroll import _DTable
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/eggroll.py", line 25, in <module>
+    import lmdb
+ModuleNotFoundError: No module named 'lmdb'
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_guest_workflow.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression import HeteroLRGuest
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/__init__.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression.hetero_lr_arbiter import HeteroLRArbiter
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/hetero_lr_arbiter.py", line 18, in <module>
+    from arch.api import federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/federation.py", line 19, in <module>
+    from arch.api.standalone import federation as standalone_federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/federation.py", line 17, in <module>
+    from arch.api.standalone.eggroll import _DTable
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/eggroll.py", line 25, in <module>
+    import lmdb
+ModuleNotFoundError: No module named 'lmdb'
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_arbiter_workflow.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression import HeteroLRArbiter
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/__init__.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression.hetero_lr_arbiter import HeteroLRArbiter
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/hetero_lr_arbiter.py", line 18, in <module>
+    from arch.api import federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/federation.py", line 19, in <module>
+    from arch.api.standalone import federation as standalone_federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/federation.py", line 17, in <module>
+    from arch.api.standalone.eggroll import _DTable
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/eggroll.py", line 25, in <module>
+    import lmdb
+ModuleNotFoundError: No module named 'lmdb'
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/guest_runtime_conf.json_hetero_logistic_regression_example_standalone_20210318150405
+jobid is hetero_logistic_regression_example_standalone_20210318150405
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/host_runtime_conf.json_hetero_logistic_regression_example_standalone_20210318150405
+jobid is hetero_logistic_regression_example_standalone_20210318150405
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/arbiter_runtime_conf.json_hetero_logistic_regression_example_standalone_20210318150405
+jobid is hetero_logistic_regression_example_standalone_20210318150405
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_guest_workflow.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression import HeteroLRGuest
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/__init__.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression.hetero_lr_arbiter import HeteroLRArbiter
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/hetero_lr_arbiter.py", line 18, in <module>
+    from arch.api import federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/federation.py", line 19, in <module>
+    from arch.api.standalone import federation as standalone_federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/federation.py", line 17, in <module>
+    from arch.api.standalone.eggroll import _DTable
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/eggroll.py", line 25, in <module>
+    import lmdb
+ModuleNotFoundError: No module named 'lmdb'
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_host_workflow.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression import HeteroLRHost
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/__init__.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression.hetero_lr_arbiter import HeteroLRArbiter
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/hetero_lr_arbiter.py", line 18, in <module>
+    from arch.api import federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/federation.py", line 19, in <module>
+    from arch.api.standalone import federation as standalone_federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/federation.py", line 17, in <module>
+    from arch.api.standalone.eggroll import _DTable
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/eggroll.py", line 25, in <module>
+    import lmdb
+ModuleNotFoundError: No module named 'lmdb'
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_arbiter_workflow.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression import HeteroLRArbiter
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/__init__.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression.hetero_lr_arbiter import HeteroLRArbiter
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/hetero_lr_arbiter.py", line 18, in <module>
+    from arch.api import federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/federation.py", line 19, in <module>
+    from arch.api.standalone import federation as standalone_federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/federation.py", line 17, in <module>
+    from arch.api.standalone.eggroll import _DTable
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/eggroll.py", line 25, in <module>
+    import lmdb
+ModuleNotFoundError: No module named 'lmdb'
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/guest_runtime_conf.json_hetero_logistic_regression_example_standalone_20210318150433
+jobid is hetero_logistic_regression_example_standalone_20210318150433
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/host_runtime_conf.json_hetero_logistic_regression_example_standalone_20210318150433
+jobid is hetero_logistic_regression_example_standalone_20210318150433
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/arbiter_runtime_conf.json_hetero_logistic_regression_example_standalone_20210318150433
+jobid is hetero_logistic_regression_example_standalone_20210318150433
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_arbiter_workflow.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression import HeteroLRArbiter
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/__init__.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression.hetero_lr_arbiter import HeteroLRArbiter
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/hetero_lr_arbiter.py", line 18, in <module>
+    from arch.api import federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/federation.py", line 19, in <module>
+    from arch.api.standalone import federation as standalone_federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/federation.py", line 17, in <module>
+    from arch.api.standalone.eggroll import _DTable
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/eggroll.py", line 25, in <module>
+    import lmdb
+ModuleNotFoundError: No module named 'lmdb'
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_guest_workflow.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression import HeteroLRGuest
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/__init__.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression.hetero_lr_arbiter import HeteroLRArbiter
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/hetero_lr_arbiter.py", line 18, in <module>
+    from arch.api import federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/federation.py", line 19, in <module>
+    from arch.api.standalone import federation as standalone_federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/federation.py", line 17, in <module>
+    from arch.api.standalone.eggroll import _DTable
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/eggroll.py", line 25, in <module>
+    import lmdb
+ModuleNotFoundError: No module named 'lmdb'
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_host_workflow.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression import HeteroLRHost
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/__init__.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression.hetero_lr_arbiter import HeteroLRArbiter
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/hetero_lr_arbiter.py", line 18, in <module>
+    from arch.api import federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/federation.py", line 19, in <module>
+    from arch.api.standalone import federation as standalone_federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/federation.py", line 17, in <module>
+    from arch.api.standalone.eggroll import _DTable
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/eggroll.py", line 25, in <module>
+    import lmdb
+ModuleNotFoundError: No module named 'lmdb'
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/guest_runtime_conf.json_hetero_logistic_regression_example_standalone_20210318150523
+jobid is hetero_logistic_regression_example_standalone_20210318150523
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/host_runtime_conf.json_hetero_logistic_regression_example_standalone_20210318150523
+jobid is hetero_logistic_regression_example_standalone_20210318150523
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/arbiter_runtime_conf.json_hetero_logistic_regression_example_standalone_20210318150523
+jobid is hetero_logistic_regression_example_standalone_20210318150523
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_guest_workflow.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression import HeteroLRGuest
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/__init__.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression.hetero_lr_arbiter import HeteroLRArbiter
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/hetero_lr_arbiter.py", line 18, in <module>
+    from arch.api import federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/federation.py", line 19, in <module>
+    from arch.api.standalone import federation as standalone_federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/federation.py", line 17, in <module>
+    from arch.api.standalone.eggroll import _DTable
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/eggroll.py", line 25, in <module>
+    import lmdb
+ModuleNotFoundError: No module named 'lmdb'
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_host_workflow.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression import HeteroLRHost
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/__init__.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression.hetero_lr_arbiter import HeteroLRArbiter
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/hetero_lr_arbiter.py", line 18, in <module>
+    from arch.api import federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/federation.py", line 19, in <module>
+    from arch.api.standalone import federation as standalone_federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/federation.py", line 17, in <module>
+    from arch.api.standalone.eggroll import _DTable
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/eggroll.py", line 25, in <module>
+    import lmdb
+ModuleNotFoundError: No module named 'lmdb'
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_arbiter_workflow.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression import HeteroLRArbiter
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/__init__.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression.hetero_lr_arbiter import HeteroLRArbiter
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/hetero_lr_arbiter.py", line 18, in <module>
+    from arch.api import federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/federation.py", line 19, in <module>
+    from arch.api.standalone import federation as standalone_federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/federation.py", line 17, in <module>
+    from arch.api.standalone.eggroll import _DTable
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/eggroll.py", line 25, in <module>
+    import lmdb
+ModuleNotFoundError: No module named 'lmdb'
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/guest_runtime_conf.json_hetero_logistic_regression_example_standalone_20210318151918
+jobid is hetero_logistic_regression_example_standalone_20210318151918
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/host_runtime_conf.json_hetero_logistic_regression_example_standalone_20210318151918
+jobid is hetero_logistic_regression_example_standalone_20210318151918
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/arbiter_runtime_conf.json_hetero_logistic_regression_example_standalone_20210318151918
+jobid is hetero_logistic_regression_example_standalone_20210318151918
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_guest_workflow.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression import HeteroLRGuest
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/__init__.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression.hetero_lr_arbiter import HeteroLRArbiter
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/hetero_lr_arbiter.py", line 18, in <module>
+    from arch.api import federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/federation.py", line 19, in <module>
+    from arch.api.standalone import federation as standalone_federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/federation.py", line 17, in <module>
+    from arch.api.standalone.eggroll import _DTable
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/eggroll.py", line 25, in <module>
+    import lmdb
+ModuleNotFoundError: No module named 'lmdb'
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_arbiter_workflow.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression import HeteroLRArbiter
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/__init__.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression.hetero_lr_arbiter import HeteroLRArbiter
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/hetero_lr_arbiter.py", line 18, in <module>
+    from arch.api import federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/federation.py", line 19, in <module>
+    from arch.api.standalone import federation as standalone_federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/federation.py", line 17, in <module>
+    from arch.api.standalone.eggroll import _DTable
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/eggroll.py", line 25, in <module>
+    import lmdb
+ModuleNotFoundError: No module named 'lmdb'
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_host_workflow.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression import HeteroLRHost
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/__init__.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression.hetero_lr_arbiter import HeteroLRArbiter
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/hetero_lr_arbiter.py", line 18, in <module>
+    from arch.api import federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/federation.py", line 19, in <module>
+    from arch.api.standalone import federation as standalone_federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/federation.py", line 17, in <module>
+    from arch.api.standalone.eggroll import _DTable
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/eggroll.py", line 25, in <module>
+    import lmdb
+ModuleNotFoundError: No module named 'lmdb'
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/guest_runtime_conf.json_hetero_logistic_regression_example_standalone_20210318152356
+jobid is hetero_logistic_regression_example_standalone_20210318152356
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/host_runtime_conf.json_hetero_logistic_regression_example_standalone_20210318152356
+jobid is hetero_logistic_regression_example_standalone_20210318152356
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/arbiter_runtime_conf.json_hetero_logistic_regression_example_standalone_20210318152356
+jobid is hetero_logistic_regression_example_standalone_20210318152356
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_host_workflow.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression import HeteroLRHost
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/__init__.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression.hetero_lr_arbiter import HeteroLRArbiter
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/hetero_lr_arbiter.py", line 18, in <module>
+    from arch.api import federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/federation.py", line 19, in <module>
+    from arch.api.standalone import federation as standalone_federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/federation.py", line 17, in <module>
+    from arch.api.standalone.eggroll import _DTable
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/eggroll.py", line 25, in <module>
+    import lmdb
+ModuleNotFoundError: No module named 'lmdb'
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_arbiter_workflow.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression import HeteroLRArbiter
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/__init__.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression.hetero_lr_arbiter import HeteroLRArbiter
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/hetero_lr_arbiter.py", line 18, in <module>
+    from arch.api import federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/federation.py", line 19, in <module>
+    from arch.api.standalone import federation as standalone_federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/federation.py", line 17, in <module>
+    from arch.api.standalone.eggroll import _DTable
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/eggroll.py", line 25, in <module>
+    import lmdb
+ModuleNotFoundError: No module named 'lmdb'
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_guest_workflow.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression import HeteroLRGuest
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/__init__.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression.hetero_lr_arbiter import HeteroLRArbiter
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/hetero_lr_arbiter.py", line 18, in <module>
+    from arch.api import federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/federation.py", line 19, in <module>
+    from arch.api.standalone import federation as standalone_federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/federation.py", line 17, in <module>
+    from arch.api.standalone.eggroll import _DTable
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/eggroll.py", line 25, in <module>
+    import lmdb
+ModuleNotFoundError: No module named 'lmdb'
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/guest_runtime_conf.json_hetero_logistic_regression_example_standalone_20210318152757
+jobid is hetero_logistic_regression_example_standalone_20210318152757
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/host_runtime_conf.json_hetero_logistic_regression_example_standalone_20210318152757
+jobid is hetero_logistic_regression_example_standalone_20210318152757
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/arbiter_runtime_conf.json_hetero_logistic_regression_example_standalone_20210318152757
+jobid is hetero_logistic_regression_example_standalone_20210318152757
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_guest_workflow.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression import HeteroLRGuest
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/__init__.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression.hetero_lr_arbiter import HeteroLRArbiter
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/hetero_lr_arbiter.py", line 18, in <module>
+    from arch.api import federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/federation.py", line 19, in <module>
+    from arch.api.standalone import federation as standalone_federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/federation.py", line 17, in <module>
+    from arch.api.standalone.eggroll import _DTable
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/eggroll.py", line 25, in <module>
+    import lmdb
+ModuleNotFoundError: No module named 'lmdb'
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_host_workflow.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression import HeteroLRHost
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/__init__.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression.hetero_lr_arbiter import HeteroLRArbiter
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/hetero_lr_arbiter.py", line 18, in <module>
+    from arch.api import federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/federation.py", line 19, in <module>
+    from arch.api.standalone import federation as standalone_federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/federation.py", line 17, in <module>
+    from arch.api.standalone.eggroll import _DTable
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/eggroll.py", line 25, in <module>
+    import lmdb
+ModuleNotFoundError: No module named 'lmdb'
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_arbiter_workflow.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression import HeteroLRArbiter
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/__init__.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression.hetero_lr_arbiter import HeteroLRArbiter
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/hetero_lr_arbiter.py", line 18, in <module>
+    from arch.api import federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/federation.py", line 19, in <module>
+    from arch.api.standalone import federation as standalone_federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/federation.py", line 17, in <module>
+    from arch.api.standalone.eggroll import _DTable
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/eggroll.py", line 25, in <module>
+    import lmdb
+ModuleNotFoundError: No module named 'lmdb'
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/guest_runtime_conf.json_hetero_logistic_regression_example_standalone_20210318153007
+jobid is hetero_logistic_regression_example_standalone_20210318153007
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/host_runtime_conf.json_hetero_logistic_regression_example_standalone_20210318153007
+jobid is hetero_logistic_regression_example_standalone_20210318153007
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/arbiter_runtime_conf.json_hetero_logistic_regression_example_standalone_20210318153007
+jobid is hetero_logistic_regression_example_standalone_20210318153007
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_host_workflow.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression import HeteroLRHost
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/__init__.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression.hetero_lr_arbiter import HeteroLRArbiter
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/hetero_lr_arbiter.py", line 18, in <module>
+    from arch.api import federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/federation.py", line 19, in <module>
+    from arch.api.standalone import federation as standalone_federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/federation.py", line 17, in <module>
+    from arch.api.standalone.eggroll import _DTable
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/eggroll.py", line 25, in <module>
+    import lmdb
+ModuleNotFoundError: No module named 'lmdb'
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_arbiter_workflow.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression import HeteroLRArbiter
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/__init__.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression.hetero_lr_arbiter import HeteroLRArbiter
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/hetero_lr_arbiter.py", line 18, in <module>
+    from arch.api import federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/federation.py", line 19, in <module>
+    from arch.api.standalone import federation as standalone_federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/federation.py", line 17, in <module>
+    from arch.api.standalone.eggroll import _DTable
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/eggroll.py", line 25, in <module>
+    import lmdb
+ModuleNotFoundError: No module named 'lmdb'
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_guest_workflow.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression import HeteroLRGuest
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/__init__.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression.hetero_lr_arbiter import HeteroLRArbiter
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/hetero_lr_arbiter.py", line 18, in <module>
+    from arch.api import federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/federation.py", line 19, in <module>
+    from arch.api.standalone import federation as standalone_federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/federation.py", line 17, in <module>
+    from arch.api.standalone.eggroll import _DTable
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/eggroll.py", line 25, in <module>
+    import lmdb
+ModuleNotFoundError: No module named 'lmdb'
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/guest_runtime_conf.json_hetero_logistic_regression_example_standalone_20210318153556
+jobid is hetero_logistic_regression_example_standalone_20210318153556
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/host_runtime_conf.json_hetero_logistic_regression_example_standalone_20210318153556
+jobid is hetero_logistic_regression_example_standalone_20210318153556
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/arbiter_runtime_conf.json_hetero_logistic_regression_example_standalone_20210318153556
+jobid is hetero_logistic_regression_example_standalone_20210318153556
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_arbiter_workflow.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression import HeteroLRArbiter
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/__init__.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression.hetero_lr_arbiter import HeteroLRArbiter
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/hetero_lr_arbiter.py", line 18, in <module>
+    from arch.api import federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/federation.py", line 19, in <module>
+    from arch.api.standalone import federation as standalone_federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/federation.py", line 17, in <module>
+    from arch.api.standalone.eggroll import _DTable
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/eggroll.py", line 25, in <module>
+    import lmdb
+ModuleNotFoundError: No module named 'lmdb'
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_host_workflow.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression import HeteroLRHost
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/__init__.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression.hetero_lr_arbiter import HeteroLRArbiter
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/hetero_lr_arbiter.py", line 18, in <module>
+    from arch.api import federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/federation.py", line 19, in <module>
+    from arch.api.standalone import federation as standalone_federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/federation.py", line 17, in <module>
+    from arch.api.standalone.eggroll import _DTable
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/eggroll.py", line 25, in <module>
+    import lmdb
+ModuleNotFoundError: No module named 'lmdb'
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_guest_workflow.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression import HeteroLRGuest
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/__init__.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression.hetero_lr_arbiter import HeteroLRArbiter
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/hetero_lr_arbiter.py", line 18, in <module>
+    from arch.api import federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/federation.py", line 19, in <module>
+    from arch.api.standalone import federation as standalone_federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/federation.py", line 17, in <module>
+    from arch.api.standalone.eggroll import _DTable
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/eggroll.py", line 25, in <module>
+    import lmdb
+ModuleNotFoundError: No module named 'lmdb'
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/guest_runtime_conf.json_hetero_logistic_regression_example_standalone_20210318153707
+jobid is hetero_logistic_regression_example_standalone_20210318153707
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/host_runtime_conf.json_hetero_logistic_regression_example_standalone_20210318153707
+jobid is hetero_logistic_regression_example_standalone_20210318153707
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/arbiter_runtime_conf.json_hetero_logistic_regression_example_standalone_20210318153707
+jobid is hetero_logistic_regression_example_standalone_20210318153707
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_guest_workflow.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression import HeteroLRGuest
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/__init__.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression.hetero_lr_arbiter import HeteroLRArbiter
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/hetero_lr_arbiter.py", line 18, in <module>
+    from arch.api import federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/federation.py", line 19, in <module>
+    from arch.api.standalone import federation as standalone_federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/federation.py", line 17, in <module>
+    from arch.api.standalone.eggroll import _DTable
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/eggroll.py", line 25, in <module>
+    import lmdb
+ModuleNotFoundError: No module named 'lmdb'
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_host_workflow.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression import HeteroLRHost
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/__init__.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression.hetero_lr_arbiter import HeteroLRArbiter
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/hetero_lr_arbiter.py", line 18, in <module>
+    from arch.api import federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/federation.py", line 19, in <module>
+    from arch.api.standalone import federation as standalone_federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/federation.py", line 17, in <module>
+    from arch.api.standalone.eggroll import _DTable
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/eggroll.py", line 25, in <module>
+    import lmdb
+ModuleNotFoundError: No module named 'lmdb'
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_arbiter_workflow.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression import HeteroLRArbiter
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/__init__.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression.hetero_lr_arbiter import HeteroLRArbiter
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/hetero_lr_arbiter.py", line 18, in <module>
+    from arch.api import federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/federation.py", line 19, in <module>
+    from arch.api.standalone import federation as standalone_federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/federation.py", line 17, in <module>
+    from arch.api.standalone.eggroll import _DTable
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/eggroll.py", line 25, in <module>
+    import lmdb
+ModuleNotFoundError: No module named 'lmdb'
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/guest_runtime_conf.json_hetero_logistic_regression_example_standalone_20210318153726
+jobid is hetero_logistic_regression_example_standalone_20210318153726
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/host_runtime_conf.json_hetero_logistic_regression_example_standalone_20210318153726
+jobid is hetero_logistic_regression_example_standalone_20210318153726
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/arbiter_runtime_conf.json_hetero_logistic_regression_example_standalone_20210318153726
+jobid is hetero_logistic_regression_example_standalone_20210318153726
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_guest_workflow.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression import HeteroLRGuest
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/__init__.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression.hetero_lr_arbiter import HeteroLRArbiter
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/hetero_lr_arbiter.py", line 18, in <module>
+    from arch.api import federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/federation.py", line 19, in <module>
+    from arch.api.standalone import federation as standalone_federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/federation.py", line 17, in <module>
+    from arch.api.standalone.eggroll import _DTable
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/eggroll.py", line 25, in <module>
+    import lmdb
+ModuleNotFoundError: No module named 'lmdb'
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_host_workflow.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression import HeteroLRHost
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/__init__.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression.hetero_lr_arbiter import HeteroLRArbiter
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/hetero_lr_arbiter.py", line 18, in <module>
+    from arch.api import federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/federation.py", line 19, in <module>
+    from arch.api.standalone import federation as standalone_federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/federation.py", line 17, in <module>
+    from arch.api.standalone.eggroll import _DTable
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/eggroll.py", line 25, in <module>
+    import lmdb
+ModuleNotFoundError: No module named 'lmdb'
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_arbiter_workflow.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression import HeteroLRArbiter
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/__init__.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression.hetero_lr_arbiter import HeteroLRArbiter
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/hetero_lr_arbiter.py", line 18, in <module>
+    from arch.api import federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/federation.py", line 19, in <module>
+    from arch.api.standalone import federation as standalone_federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/federation.py", line 17, in <module>
+    from arch.api.standalone.eggroll import _DTable
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/eggroll.py", line 25, in <module>
+    import lmdb
+ModuleNotFoundError: No module named 'lmdb'
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/guest_runtime_conf.json_hetero_logistic_regression_example_standalone_20210318153749
+jobid is hetero_logistic_regression_example_standalone_20210318153749
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/host_runtime_conf.json_hetero_logistic_regression_example_standalone_20210318153749
+jobid is hetero_logistic_regression_example_standalone_20210318153749
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/arbiter_runtime_conf.json_hetero_logistic_regression_example_standalone_20210318153749
+jobid is hetero_logistic_regression_example_standalone_20210318153749
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_guest_workflow.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression import HeteroLRGuest
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/__init__.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression.hetero_lr_arbiter import HeteroLRArbiter
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/hetero_lr_arbiter.py", line 18, in <module>
+    from arch.api import federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/federation.py", line 19, in <module>
+    from arch.api.standalone import federation as standalone_federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/federation.py", line 17, in <module>
+    from arch.api.standalone.eggroll import _DTable
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/eggroll.py", line 25, in <module>
+    import lmdb
+ModuleNotFoundError: No module named 'lmdb'
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_arbiter_workflow.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression import HeteroLRArbiter
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/__init__.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression.hetero_lr_arbiter import HeteroLRArbiter
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/hetero_lr_arbiter.py", line 18, in <module>
+    from arch.api import federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/federation.py", line 19, in <module>
+    from arch.api.standalone import federation as standalone_federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/federation.py", line 17, in <module>
+    from arch.api.standalone.eggroll import _DTable
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/eggroll.py", line 25, in <module>
+    import lmdb
+ModuleNotFoundError: No module named 'lmdb'
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_host_workflow.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression import HeteroLRHost
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/__init__.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression.hetero_lr_arbiter import HeteroLRArbiter
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/hetero_lr_arbiter.py", line 18, in <module>
+    from arch.api import federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/federation.py", line 19, in <module>
+    from arch.api.standalone import federation as standalone_federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/federation.py", line 17, in <module>
+    from arch.api.standalone.eggroll import _DTable
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/eggroll.py", line 25, in <module>
+    import lmdb
+ModuleNotFoundError: No module named 'lmdb'
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/guest_runtime_conf.json_hetero_logistic_regression_example_standalone_2021031815
+jobid is hetero_logistic_regression_example_standalone_2021031815
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/host_runtime_conf.json_hetero_logistic_regression_example_standalone_2021031815
+jobid is hetero_logistic_regression_example_standalone_2021031815
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/arbiter_runtime_conf.json_hetero_logistic_regression_example_standalone_2021031815
+jobid is hetero_logistic_regression_example_standalone_2021031815
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_guest_workflow.py", line 36, in <module>
+    guest_wf.run()
+  File "/Users/clz/PycharmProjects/FATE-0.1/workflow/workflow.py", line 363, in run
+    self._init_argument()
+  File "/Users/clz/PycharmProjects/FATE-0.1/workflow/workflow.py", line 354, in _init_argument
+    self._initialize(config_path)
+  File "/Users/clz/PycharmProjects/FATE-0.1/workflow/workflow.py", line 52, in _initialize
+    self._initialize_model(config_path)
+  File "../../workflow/hetero_lr_workflow/hetero_guest_workflow.py", line 27, in _initialize_model
+    self.logistic_param = ParamExtract.parse_param_from_config(logistic_param, config)
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/util/param_extract.py", line 41, in parse_param_from_config
+    config_json = json.loads(fin.read())
+  File "/Users/clz/anaconda3/envs/FATE/lib/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/Users/clz/anaconda3/envs/FATE/lib/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Users/clz/anaconda3/envs/FATE/lib/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 5 column 21 (char 63)
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_host_workflow.py", line 36, in <module>
+    host_wf.run()
+  File "/Users/clz/PycharmProjects/FATE-0.1/workflow/workflow.py", line 363, in run
+    self._init_argument()
+  File "/Users/clz/PycharmProjects/FATE-0.1/workflow/workflow.py", line 354, in _init_argument
+    self._initialize(config_path)
+  File "/Users/clz/PycharmProjects/FATE-0.1/workflow/workflow.py", line 52, in _initialize
+    self._initialize_model(config_path)
+  File "../../workflow/hetero_lr_workflow/hetero_host_workflow.py", line 27, in _initialize_model
+    self.logistic_param = ParamExtract.parse_param_from_config(logistic_param, config)
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/util/param_extract.py", line 41, in parse_param_from_config
+    config_json = json.loads(fin.read())
+  File "/Users/clz/anaconda3/envs/FATE/lib/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/Users/clz/anaconda3/envs/FATE/lib/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Users/clz/anaconda3/envs/FATE/lib/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 5 column 21 (char 62)
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_arbiter_workflow.py", line 40, in <module>
+    arbiter_wf.run()
+  File "/Users/clz/PycharmProjects/FATE-0.1/workflow/workflow.py", line 363, in run
+    self._init_argument()
+  File "/Users/clz/PycharmProjects/FATE-0.1/workflow/workflow.py", line 354, in _init_argument
+    self._initialize(config_path)
+  File "/Users/clz/PycharmProjects/FATE-0.1/workflow/workflow.py", line 52, in _initialize
+    self._initialize_model(config_path)
+  File "../../workflow/hetero_lr_workflow/hetero_arbiter_workflow.py", line 27, in _initialize_model
+    self.logistic_param = ParamExtract.parse_param_from_config(logistic_param, config)
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/util/param_extract.py", line 41, in parse_param_from_config
+    config_json = json.loads(fin.read())
+  File "/Users/clz/anaconda3/envs/FATE/lib/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/Users/clz/anaconda3/envs/FATE/lib/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Users/clz/anaconda3/envs/FATE/lib/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 5 column 21 (char 65)
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/guest_runtime_conf.json_hetero_logistic_regression_example_standalone_2021031815
+jobid is hetero_logistic_regression_example_standalone_2021031815
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/host_runtime_conf.json_hetero_logistic_regression_example_standalone_2021031815
+jobid is hetero_logistic_regression_example_standalone_2021031815
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/arbiter_runtime_conf.json_hetero_logistic_regression_example_standalone_2021031815
+jobid is hetero_logistic_regression_example_standalone_2021031815
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_arbiter_workflow.py", line 40, in <module>
+    arbiter_wf.run()
+  File "/Users/clz/PycharmProjects/FATE-0.1/workflow/workflow.py", line 363, in run
+    self._init_argument()
+  File "/Users/clz/PycharmProjects/FATE-0.1/workflow/workflow.py", line 354, in _init_argument
+    self._initialize(config_path)
+  File "/Users/clz/PycharmProjects/FATE-0.1/workflow/workflow.py", line 52, in _initialize
+    self._initialize_model(config_path)
+  File "../../workflow/hetero_lr_workflow/hetero_arbiter_workflow.py", line 27, in _initialize_model
+    self.logistic_param = ParamExtract.parse_param_from_config(logistic_param, config)
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/util/param_extract.py", line 41, in parse_param_from_config
+    config_json = json.loads(fin.read())
+  File "/Users/clz/anaconda3/envs/FATE/lib/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/Users/clz/anaconda3/envs/FATE/lib/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Users/clz/anaconda3/envs/FATE/lib/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 5 column 21 (char 65)
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_host_workflow.py", line 36, in <module>
+    host_wf.run()
+  File "/Users/clz/PycharmProjects/FATE-0.1/workflow/workflow.py", line 363, in run
+    self._init_argument()
+  File "/Users/clz/PycharmProjects/FATE-0.1/workflow/workflow.py", line 354, in _init_argument
+    self._initialize(config_path)
+  File "/Users/clz/PycharmProjects/FATE-0.1/workflow/workflow.py", line 52, in _initialize
+    self._initialize_model(config_path)
+  File "../../workflow/hetero_lr_workflow/hetero_host_workflow.py", line 27, in _initialize_model
+    self.logistic_param = ParamExtract.parse_param_from_config(logistic_param, config)
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/util/param_extract.py", line 41, in parse_param_from_config
+    config_json = json.loads(fin.read())
+  File "/Users/clz/anaconda3/envs/FATE/lib/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/Users/clz/anaconda3/envs/FATE/lib/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Users/clz/anaconda3/envs/FATE/lib/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 5 column 21 (char 62)
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_guest_workflow.py", line 36, in <module>
+    guest_wf.run()
+  File "/Users/clz/PycharmProjects/FATE-0.1/workflow/workflow.py", line 363, in run
+    self._init_argument()
+  File "/Users/clz/PycharmProjects/FATE-0.1/workflow/workflow.py", line 354, in _init_argument
+    self._initialize(config_path)
+  File "/Users/clz/PycharmProjects/FATE-0.1/workflow/workflow.py", line 52, in _initialize
+    self._initialize_model(config_path)
+  File "../../workflow/hetero_lr_workflow/hetero_guest_workflow.py", line 27, in _initialize_model
+    self.logistic_param = ParamExtract.parse_param_from_config(logistic_param, config)
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/util/param_extract.py", line 41, in parse_param_from_config
+    config_json = json.loads(fin.read())
+  File "/Users/clz/anaconda3/envs/FATE/lib/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/Users/clz/anaconda3/envs/FATE/lib/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Users/clz/anaconda3/envs/FATE/lib/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 5 column 21 (char 63)
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/guest_runtime_conf.json_hetero_logistic_regression_example_standalone_2021031815
+jobid is hetero_logistic_regression_example_standalone_2021031815
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/host_runtime_conf.json_hetero_logistic_regression_example_standalone_2021031815
+jobid is hetero_logistic_regression_example_standalone_2021031815
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/arbiter_runtime_conf.json_hetero_logistic_regression_example_standalone_2021031815
+jobid is hetero_logistic_regression_example_standalone_2021031815
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_arbiter_workflow.py", line 40, in <module>
+    arbiter_wf.run()
+  File "/Users/clz/PycharmProjects/FATE-0.1/workflow/workflow.py", line 363, in run
+    self._init_argument()
+  File "/Users/clz/PycharmProjects/FATE-0.1/workflow/workflow.py", line 354, in _init_argument
+    self._initialize(config_path)
+  File "/Users/clz/PycharmProjects/FATE-0.1/workflow/workflow.py", line 52, in _initialize
+    self._initialize_model(config_path)
+  File "../../workflow/hetero_lr_workflow/hetero_arbiter_workflow.py", line 27, in _initialize_model
+    self.logistic_param = ParamExtract.parse_param_from_config(logistic_param, config)
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/util/param_extract.py", line 41, in parse_param_from_config
+    config_json = json.loads(fin.read())
+  File "/Users/clz/anaconda3/envs/FATE/lib/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/Users/clz/anaconda3/envs/FATE/lib/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Users/clz/anaconda3/envs/FATE/lib/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 5 column 21 (char 65)
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_host_workflow.py", line 36, in <module>
+    host_wf.run()
+  File "/Users/clz/PycharmProjects/FATE-0.1/workflow/workflow.py", line 363, in run
+    self._init_argument()
+  File "/Users/clz/PycharmProjects/FATE-0.1/workflow/workflow.py", line 354, in _init_argument
+    self._initialize(config_path)
+  File "/Users/clz/PycharmProjects/FATE-0.1/workflow/workflow.py", line 52, in _initialize
+    self._initialize_model(config_path)
+  File "../../workflow/hetero_lr_workflow/hetero_host_workflow.py", line 27, in _initialize_model
+    self.logistic_param = ParamExtract.parse_param_from_config(logistic_param, config)
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/util/param_extract.py", line 41, in parse_param_from_config
+    config_json = json.loads(fin.read())
+  File "/Users/clz/anaconda3/envs/FATE/lib/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/Users/clz/anaconda3/envs/FATE/lib/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Users/clz/anaconda3/envs/FATE/lib/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 5 column 21 (char 62)
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_guest_workflow.py", line 36, in <module>
+    guest_wf.run()
+  File "/Users/clz/PycharmProjects/FATE-0.1/workflow/workflow.py", line 363, in run
+    self._init_argument()
+  File "/Users/clz/PycharmProjects/FATE-0.1/workflow/workflow.py", line 354, in _init_argument
+    self._initialize(config_path)
+  File "/Users/clz/PycharmProjects/FATE-0.1/workflow/workflow.py", line 52, in _initialize
+    self._initialize_model(config_path)
+  File "../../workflow/hetero_lr_workflow/hetero_guest_workflow.py", line 27, in _initialize_model
+    self.logistic_param = ParamExtract.parse_param_from_config(logistic_param, config)
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/util/param_extract.py", line 41, in parse_param_from_config
+    config_json = json.loads(fin.read())
+  File "/Users/clz/anaconda3/envs/FATE/lib/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/Users/clz/anaconda3/envs/FATE/lib/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Users/clz/anaconda3/envs/FATE/lib/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 5 column 21 (char 63)
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/guest_runtime_conf.json_hetero_logistic_regression_example_standalone_2021031815
+jobid is hetero_logistic_regression_example_standalone_2021031815
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/host_runtime_conf.json_hetero_logistic_regression_example_standalone_2021031815
+jobid is hetero_logistic_regression_example_standalone_2021031815
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/arbiter_runtime_conf.json_hetero_logistic_regression_example_standalone_2021031815
+jobid is hetero_logistic_regression_example_standalone_2021031815
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_guest_workflow.py", line 36, in <module>
+    guest_wf.run()
+  File "/Users/clz/PycharmProjects/FATE-0.1/workflow/workflow.py", line 363, in run
+    self._init_argument()
+  File "/Users/clz/PycharmProjects/FATE-0.1/workflow/workflow.py", line 354, in _init_argument
+    self._initialize(config_path)
+  File "/Users/clz/PycharmProjects/FATE-0.1/workflow/workflow.py", line 52, in _initialize
+    self._initialize_model(config_path)
+  File "../../workflow/hetero_lr_workflow/hetero_guest_workflow.py", line 27, in _initialize_model
+    self.logistic_param = ParamExtract.parse_param_from_config(logistic_param, config)
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/util/param_extract.py", line 41, in parse_param_from_config
+    config_json = json.loads(fin.read())
+  File "/Users/clz/anaconda3/envs/FATE/lib/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/Users/clz/anaconda3/envs/FATE/lib/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Users/clz/anaconda3/envs/FATE/lib/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 5 column 21 (char 63)
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_host_workflow.py", line 36, in <module>
+    host_wf.run()
+  File "/Users/clz/PycharmProjects/FATE-0.1/workflow/workflow.py", line 363, in run
+    self._init_argument()
+  File "/Users/clz/PycharmProjects/FATE-0.1/workflow/workflow.py", line 354, in _init_argument
+    self._initialize(config_path)
+  File "/Users/clz/PycharmProjects/FATE-0.1/workflow/workflow.py", line 52, in _initialize
+    self._initialize_model(config_path)
+  File "../../workflow/hetero_lr_workflow/hetero_host_workflow.py", line 27, in _initialize_model
+    self.logistic_param = ParamExtract.parse_param_from_config(logistic_param, config)
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/util/param_extract.py", line 41, in parse_param_from_config
+    config_json = json.loads(fin.read())
+  File "/Users/clz/anaconda3/envs/FATE/lib/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/Users/clz/anaconda3/envs/FATE/lib/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Users/clz/anaconda3/envs/FATE/lib/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 5 column 21 (char 62)
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_arbiter_workflow.py", line 40, in <module>
+    arbiter_wf.run()
+  File "/Users/clz/PycharmProjects/FATE-0.1/workflow/workflow.py", line 363, in run
+    self._init_argument()
+  File "/Users/clz/PycharmProjects/FATE-0.1/workflow/workflow.py", line 354, in _init_argument
+    self._initialize(config_path)
+  File "/Users/clz/PycharmProjects/FATE-0.1/workflow/workflow.py", line 52, in _initialize
+    self._initialize_model(config_path)
+  File "../../workflow/hetero_lr_workflow/hetero_arbiter_workflow.py", line 27, in _initialize_model
+    self.logistic_param = ParamExtract.parse_param_from_config(logistic_param, config)
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/util/param_extract.py", line 41, in parse_param_from_config
+    config_json = json.loads(fin.read())
+  File "/Users/clz/anaconda3/envs/FATE/lib/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/Users/clz/anaconda3/envs/FATE/lib/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Users/clz/anaconda3/envs/FATE/lib/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 5 column 21 (char 65)
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/guest_runtime_conf.json_hetero_logistic_regression_example_standalone_2021031815
+jobid is hetero_logistic_regression_example_standalone_2021031815
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/host_runtime_conf.json_hetero_logistic_regression_example_standalone_2021031815
+jobid is hetero_logistic_regression_example_standalone_2021031815
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/arbiter_runtime_conf.json_hetero_logistic_regression_example_standalone_2021031815
+jobid is hetero_logistic_regression_example_standalone_2021031815
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_guest_workflow.py", line 36, in <module>
+    guest_wf.run()
+  File "/Users/clz/PycharmProjects/FATE-0.1/workflow/workflow.py", line 384, in run
+    self.train(train_data_instance, validation_data=predict_data_instance)
+  File "/Users/clz/PycharmProjects/FATE-0.1/workflow/workflow.py", line 119, in train
+    self.model.fit(train_data)
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/hetero_lr_guest.py", line 87, in fit
+    weight = self.initializer.init_model(model_shape, init_params=self.init_param_obj)
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/optim/initialize.py", line 52, in init_model
+    for ds in model_shape:
+TypeError: 'NoneType' object is not iterable
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_host_workflow.py", line 36, in <module>
+    host_wf.run()
+  File "/Users/clz/PycharmProjects/FATE-0.1/workflow/workflow.py", line 384, in run
+    self.train(train_data_instance, validation_data=predict_data_instance)
+  File "/Users/clz/PycharmProjects/FATE-0.1/workflow/workflow.py", line 119, in train
+    self.model.fit(train_data)
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/hetero_lr_host.py", line 67, in fit
+    self.coef_ = self.initializer.init_model(model_shape, init_params=self.init_param_obj)
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/optim/initialize.py", line 59, in init_model
+    w = self.random_uniform(model_shape)
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/optim/initialize.py", line 31, in random_uniform
+    inits = np.random.rand(data_shape)
+  File "mtrand.pyx", line 1363, in mtrand.RandomState.rand
+  File "mtrand.pyx", line 861, in mtrand.RandomState.random_sample
+  File "mtrand.pyx", line 167, in mtrand.cont0_array
+TypeError: 'NoneType' object cannot be interpreted as an integer
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/guest_runtime_conf.json_hetero_logistic_regression_example_standalone_2021031815
+jobid is hetero_logistic_regression_example_standalone_2021031815
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/host_runtime_conf.json_hetero_logistic_regression_example_standalone_2021031815
+jobid is hetero_logistic_regression_example_standalone_2021031815
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/arbiter_runtime_conf.json_hetero_logistic_regression_example_standalone_2021031815
+jobid is hetero_logistic_regression_example_standalone_2021031815
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/guest_runtime_conf.json_hetero_logistic_regression_example_standalone_2021031815
+jobid is hetero_logistic_regression_example_standalone_2021031815
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/host_runtime_conf.json_hetero_logistic_regression_example_standalone_2021031815
+jobid is hetero_logistic_regression_example_standalone_2021031815
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/arbiter_runtime_conf.json_hetero_logistic_regression_example_standalone_2021031815
+jobid is hetero_logistic_regression_example_standalone_2021031815
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_arbiter_workflow.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression import HeteroLRArbiter
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/__init__.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression.hetero_lr_arbiter import HeteroLRArbiter
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/hetero_lr_arbiter.py", line 18, in <module>
+    from arch.api import federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/federation.py", line 19, in <module>
+    from arch.api.standalone import federation as standalone_federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/federation.py", line 17, in <module>
+    from arch.api.standalone.eggroll import _DTable
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/eggroll.py", line 25, in <module>
+    import lmdb
+ModuleNotFoundError: No module named 'lmdb'
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_host_workflow.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression import HeteroLRHost
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/__init__.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression.hetero_lr_arbiter import HeteroLRArbiter
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/hetero_lr_arbiter.py", line 18, in <module>
+    from arch.api import federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/federation.py", line 19, in <module>
+    from arch.api.standalone import federation as standalone_federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/federation.py", line 17, in <module>
+    from arch.api.standalone.eggroll import _DTable
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/eggroll.py", line 25, in <module>
+    import lmdb
+ModuleNotFoundError: No module named 'lmdb'
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_guest_workflow.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression import HeteroLRGuest
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/__init__.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression.hetero_lr_arbiter import HeteroLRArbiter
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/hetero_lr_arbiter.py", line 18, in <module>
+    from arch.api import federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/federation.py", line 19, in <module>
+    from arch.api.standalone import federation as standalone_federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/federation.py", line 17, in <module>
+    from arch.api.standalone.eggroll import _DTable
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/eggroll.py", line 25, in <module>
+    import lmdb
+ModuleNotFoundError: No module named 'lmdb'
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/guest_runtime_conf.json_hetero_logistic_regression_example_standalone_2021031815
+jobid is hetero_logistic_regression_example_standalone_2021031815
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/host_runtime_conf.json_hetero_logistic_regression_example_standalone_2021031815
+jobid is hetero_logistic_regression_example_standalone_2021031815
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/arbiter_runtime_conf.json_hetero_logistic_regression_example_standalone_2021031815
+jobid is hetero_logistic_regression_example_standalone_2021031815
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_arbiter_workflow.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression import HeteroLRArbiter
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/__init__.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression.hetero_lr_arbiter import HeteroLRArbiter
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/hetero_lr_arbiter.py", line 18, in <module>
+    from arch.api import federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/federation.py", line 19, in <module>
+    from arch.api.standalone import federation as standalone_federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/federation.py", line 17, in <module>
+    from arch.api.standalone.eggroll import _DTable
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/eggroll.py", line 25, in <module>
+    import lmdb
+ModuleNotFoundError: No module named 'lmdb'
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_host_workflow.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression import HeteroLRHost
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/__init__.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression.hetero_lr_arbiter import HeteroLRArbiter
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/hetero_lr_arbiter.py", line 18, in <module>
+    from arch.api import federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/federation.py", line 19, in <module>
+    from arch.api.standalone import federation as standalone_federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/federation.py", line 17, in <module>
+    from arch.api.standalone.eggroll import _DTable
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/eggroll.py", line 25, in <module>
+    import lmdb
+ModuleNotFoundError: No module named 'lmdb'
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_guest_workflow.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression import HeteroLRGuest
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/__init__.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression.hetero_lr_arbiter import HeteroLRArbiter
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/hetero_lr_arbiter.py", line 18, in <module>
+    from arch.api import federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/federation.py", line 19, in <module>
+    from arch.api.standalone import federation as standalone_federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/federation.py", line 17, in <module>
+    from arch.api.standalone.eggroll import _DTable
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/eggroll.py", line 25, in <module>
+    import lmdb
+ModuleNotFoundError: No module named 'lmdb'
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/guest_runtime_conf.json_hetero_logistic_regression_example_standalone_2021031816
+jobid is hetero_logistic_regression_example_standalone_2021031816
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/host_runtime_conf.json_hetero_logistic_regression_example_standalone_2021031816
+jobid is hetero_logistic_regression_example_standalone_2021031816
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/arbiter_runtime_conf.json_hetero_logistic_regression_example_standalone_2021031816
+jobid is hetero_logistic_regression_example_standalone_2021031816
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_guest_workflow.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression import HeteroLRGuest
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/__init__.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression.hetero_lr_arbiter import HeteroLRArbiter
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/hetero_lr_arbiter.py", line 18, in <module>
+    from arch.api import federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/federation.py", line 19, in <module>
+    from arch.api.standalone import federation as standalone_federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/federation.py", line 17, in <module>
+    from arch.api.standalone.eggroll import _DTable
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/eggroll.py", line 25, in <module>
+    import lmdb
+ModuleNotFoundError: No module named 'lmdb'
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_host_workflow.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression import HeteroLRHost
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/__init__.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression.hetero_lr_arbiter import HeteroLRArbiter
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/hetero_lr_arbiter.py", line 18, in <module>
+    from arch.api import federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/federation.py", line 19, in <module>
+    from arch.api.standalone import federation as standalone_federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/federation.py", line 17, in <module>
+    from arch.api.standalone.eggroll import _DTable
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/eggroll.py", line 25, in <module>
+    import lmdb
+ModuleNotFoundError: No module named 'lmdb'
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_arbiter_workflow.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression import HeteroLRArbiter
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/__init__.py", line 17, in <module>
+    from federatedml.logistic_regression.hetero_logistic_regression.hetero_lr_arbiter import HeteroLRArbiter
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/hetero_lr_arbiter.py", line 18, in <module>
+    from arch.api import federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/federation.py", line 19, in <module>
+    from arch.api.standalone import federation as standalone_federation
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/federation.py", line 17, in <module>
+    from arch.api.standalone.eggroll import _DTable
+  File "/Users/clz/PycharmProjects/FATE-0.1/arch/api/standalone/eggroll.py", line 25, in <module>
+    import lmdb
+ModuleNotFoundError: No module named 'lmdb'
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/guest_runtime_conf.json_hetero_logistic_regression_example_standalone_2021031816
+jobid is hetero_logistic_regression_example_standalone_2021031816
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/host_runtime_conf.json_hetero_logistic_regression_example_standalone_2021031816
+jobid is hetero_logistic_regression_example_standalone_2021031816
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/arbiter_runtime_conf.json_hetero_logistic_regression_example_standalone_2021031816
+jobid is hetero_logistic_regression_example_standalone_2021031816
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/guest_runtime_conf.json_hetero_logistic_regression_example_standalone_2021031816
+jobid is hetero_logistic_regression_example_standalone_2021031816
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/host_runtime_conf.json_hetero_logistic_regression_example_standalone_2021031816
+jobid is hetero_logistic_regression_example_standalone_2021031816
+config path is /Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/conf/arbiter_runtime_conf.json_hetero_logistic_regression_example_standalone_2021031816
+jobid is hetero_logistic_regression_example_standalone_2021031816
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_arbiter_workflow.py", line 40, in <module>
+    arbiter_wf.run()
+  File "/Users/clz/PycharmProjects/FATE-0.1/workflow/workflow.py", line 384, in run
+    self.train(train_data_instance, validation_data=predict_data_instance)
+  File "/Users/clz/PycharmProjects/FATE-0.1/workflow/workflow.py", line 119, in train
+    self.model.fit(train_data)
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/hetero_lr_arbiter.py", line 91, in fit
+    gradient[i] = self.encrypt_operator.decrypt(gradient[i])
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/secureprotol/encrypt.py", line 192, in decrypt
+    return self.privacy_key.decrypt(value)
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/secureprotol/fate_paillier.py", line 187, in decrypt
+    raise ValueError("encrypted_number was encrypted against a different key!")
+ValueError: encrypted_number was encrypted against a different key!
+Traceback (most recent call last):
+  File "../../workflow/hetero_lr_workflow/hetero_guest_workflow.py", line 36, in <module>
+    guest_wf.run()
+  File "/Users/clz/PycharmProjects/FATE-0.1/workflow/workflow.py", line 384, in run
+    self.train(train_data_instance, validation_data=predict_data_instance)
+  File "/Users/clz/PycharmProjects/FATE-0.1/workflow/workflow.py", line 119, in train
+    self.model.fit(train_data)
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/logistic_regression/hetero_logistic_regression/hetero_lr_guest.py", line 183, in fit
+    loss += en_host_loss_regular
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/secureprotol/fate_paillier.py", line 228, in __add__
+    return self.__add_encryptednumber(other)
+  File "/Users/clz/PycharmProjects/FATE-0.1/federatedml/secureprotol/fate_paillier.py", line 320, in __add_encryptednumber
+    raise ValueError("add two numbers have different public key!")
+ValueError: add two numbers have different public key!

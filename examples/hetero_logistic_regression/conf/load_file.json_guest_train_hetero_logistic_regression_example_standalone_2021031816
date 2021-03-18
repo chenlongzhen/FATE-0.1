@@ -1,0 +1,8 @@
+{
+  "file": "/Users/clz/PycharmProjects/FATE-0.1/examples/hetero_logistic_regression/../data/breast_b.csv",
+  "head": 1,
+  "partition": 10,
+  "table_name": "breast_guest_train_hetero_logistic_regression_example_standalone_2021031816",
+  "namespace": "example_data_namespace",
+  "work_mode": 0
+}
